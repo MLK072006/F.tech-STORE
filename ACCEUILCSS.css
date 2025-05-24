@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+}
+.navbar{
+    padding: 8px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: white;
+}
+.navbar .logo {
+    cursor: pointer;
+    margin-left:-40px;
+}
+.navbar .logo img{
+    border-radius: 0% 30%;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    margin-left: 40px;
+    color: black;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    transition: .2s;
+}
+.navbar .menu li .active{
+    border-bottom: 4px solid #f63e4e ;
+}
+.navbar .menu li a:hover{
+    font-size: 19px;
+    color: #f12f3f;
+}
+.content{
+    background-size: cover;
+    background-repeat: no-repeat;   
+    height: 86.5vh;
+}
+.content .textc{
+    line-height: 1.5;
+    padding: 0 4%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #0e0d0d;
+}
+.content h1{
+   font-size: 40px; 
+   margin-top: -500px;
+   letter-spacing: -1px;  
+}
+.content p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.content button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: #f12f3f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+.content button:hover{
+    cursor: pointer;
+    background: rgb(241, 85, 85);
+    color: #fdfcfc;
+}
+.ilustre img {
+    margin-left: 900px;
+    margin-top: 106px;
+    
+}
+.produits_txt{
+    text-align: left;
+    padding: 20px 5%;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 1%;
+    margin-left: 80;
+    color: #0e0d0d;
+    cursor: default;
+    background: linear-gradient(271deg,rgba(3, 0, 0, 1) 0%, rgba(87, 87, 87, 1) 66%, rgba(255, 255, 255, 1) 100%);
+}
+.section_produits{
+    padding: 40px 5%;
+    background-color: #0e0d0d;
+    background-size: cover;
+}
+.produits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.produits .carte{
+    width: 80%;
+    background: #f5f5f5e7;
+    bottom: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+.produits .carte img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.produits .carte .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+.produits .carte .titre{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 20px;
+    color: #0e0d0d;
+}
+.produits .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.produits .carte .prix{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+}
+.produits .carte .achat{
+    font-size: 13px;
+    font-weight: 900;
+    color: #f63e4e;
+    padding: 10px 18px;
+    border: 5px;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+.produits .carte .achat:hover{
+    cursor: pointer;
+    background: #0e0d0d;
+    color: #f5f5f5;
+    border-radius: 0px;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+}
